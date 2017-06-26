@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Nerds</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <img src="img/nerds-logo.png" alt="Nerds" width="160" height="65">
+          </div>
+
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a class="nav-list-item__link" href="#">Студия</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-item__link" href="#">Клиенты</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-item__link" href="#">Магазин</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-item__link" href="#">Контакты</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-list-item__link" href="#">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-catalog">
+          <h1 class="header-catalog__title">Магазин готовых шаблонов</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="filters">
+          <form class="filters-form" action="index.html" method="post">
+            <div class="filters-price">
+              <b>Стоимость:</b>
+              <div class="price-controls">
+                <label class="price-controls__min">от<input name="min-price" type="text" value="0"></label>
+                <label class="price-controls__max">до<input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
+            <div class="filters-greed">
+              <b>Сетка:</b>
+              <ul>
+                <li>
+                  <input class="filters-greed__radio" type="radio" name="greed" value="adaptive" id="adaptive">
+                  <label for="adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input class="filters-greed__radio" type="radio" name="greed" value="fixed" id="fixed">
+                  <label for="fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input class="filters-greed__radio" type="radio" name="greed" value="rubber" id="rubber">
+                  <label for="rubber">Резиновая</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filters-features">
+              <b>Особенности:</b>
+              <ul>
+                <li>
+                  <input class="filters-features__checkbox" type="checkbox" name="slider" id="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </li>
+                <li>
+                  <input class="filters-features__checkbox" type="checkbox" name="features-block" id="features-block">
+                  <label for="features-block">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input class="filters-features__checkbox" type="checkbox" name="news" id="news" checked>
+                  <label for="news">Новости</label>
+                </li>
+                <li>
+                  <input class="filters-features__checkbox" type="checkbox" name="gallery" id="gallery">
+                  <label for="gallery">Галерея</label>
+                </li>
+                <li>
+                  <input class="filters-features__checkbox" type="checkbox" name="basket" id="basket">
+                  <label for="basket">Корзина</label>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn-submit" type="submit">Показать</button>
+          </form>
+        </div>
+
+        <div class="main-catalog">
+          <form class="sorting-form" action="index.html" method="post">
+            <b>Сортировать:</b>
+            По цене
+            По типу
+            По названию
+            Вниз
+            Вверх
+          </form>
+
+          <div class="site-catalog">
+            <article class="catalog-item">
+              <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+              <h2 class="catalog-item__title">Sedona</h2>
+              <p class="catalog-item__description">Информационный сайт для туристов</p>
+              <a class="button button_price" href="#">9 900 руб.</a>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
+              <h2 class="catalog-item__title">Pink App</h2>
+              <p class="catalog-item__description">Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button button_price" href="#">9 900 руб.</a>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
+              <h2 class="catalog-item__title">Barbershop</h2>
+              <p class="catalog-item__description">Сайт салоны красоты. Для мужчин, да.</p>
+              <a class="button button_price" href="#">9 900 руб.</a>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-mishka.jpg" alt="MISHKA" width="360" height="576">
+              <h2 class="catalog-item__title">MISHKA</h2>
+              <p class="catalog-item__description">Интернет-магазин вязаных игрушек</p>
+              <a class="button button_price" href="#">9 900 руб.</a>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
+              <h2 class="catalog-item__title">A Plus</h2>
+              <p class="catalog-item__description">Лендинг курсов повышения квалификации</p>
+              <a class="button button_price" href="#">9 900 руб.</a>
+            </article>
+            <article class="catalog-item">
+              <img src="img/img-kvast.jpg" alt="КВАСТ" width="360" height="576">
+              <h2 class="catalog-item__title">КВАСТ</h2>
+              <p class="catalog-item__description">Промо-сайт производителя крафтового кваса</p>
+              <a class="button button_price" href="#">9 900 руб.</a>
+            </article>
+          </div>
+
+          <div class="pages">
+            <ul>
+            <li>
+              <a class="pages__link pages__link_current">1</a>
+            </li>
+            <li>
+              <a class="pages__link" href="#">2</a>
+            </li>
+            <li>
+              <a class="pages__link" href="#">3</a>
+            </li>
+            <li>
+              <a class="pages__link pages__link_forward" href="#">Следующая</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <div class="container">
+          <div class="contacts">
+            <p class="contacts__title">
+              NЁRDS DESIGN STUDIO
+            </p>
+            <p class="text-item">
+              191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="text-item">
+              тел. +7 (812) 275-75-75
+            </p>
+            <div class="button">
+              <a href="#">Напишите нам</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-social">
+          <a class="footer-social__btn footer-social__btn-vk" href="#">VK</a>
+          <a class="footer-social__btn footer-social__btn-fb" href="#">Facebook</a>
+          <a class="footer-social__btn footer-social__btn-inst" href="#">Instagram</a>
+        </div>
+        <div class="footer-discount">
+          <p class="footer-discount__title">Давайте дружить, это выгодно!</p>
+          <p class="footer-discount__text text-item">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
